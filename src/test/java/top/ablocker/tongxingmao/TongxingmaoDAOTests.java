@@ -90,16 +90,16 @@ public class TongxingmaoDAOTests
     @Test
     void problemDAOTest()
     {
-        TAG tag1 = new TAG("书呆子", "很呆很呆，呆得不得了");
-        TAG tag2 = new TAG("宅", "不出门");
-        TAG tag3 = new TAG("闷", "不说话");
+        TAG tag1 = new TAG("书呆子2", "很呆很呆，呆得不得了");
+        TAG tag2 = new TAG("宅2", "不出门");
+        TAG tag3 = new TAG("闷2", "不说话");
 
         assertTrue(tagDAO.addAnTAG(tag1));
         assertTrue(tagDAO.addAnTAG(tag2));
         assertTrue(tagDAO.addAnTAG(tag3));
         
         List<String> tagList = Arrays.asList(tag1.getName(), tag2.getName(), tag3.getName());
-        Option option = new Option("这不就是个书呆子吗", tagList);
+        Option option = new Option("这不就是个书呆子吗2", tagList);
 
         assertTrue(optionDAO.addAnOption(option));
 

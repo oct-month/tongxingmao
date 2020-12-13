@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://182.92.175.167:3306/tongxingmao?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://127.0.0.1:3306/tongxingmao?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
     username: tong
     password: tong
     driver-class-name: com.mysql.cj.jdbc.Driver
