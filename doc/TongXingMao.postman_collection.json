@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "3e074cb3-9e39-454a-8b6e-8c54b4f21241",
+		"name": "TongXingMao",
+		"description": "通信猫后端api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取所有TAG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mao.oct-month.top/api/tagapi/tags",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"tagapi",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取特定TAG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mao.oct-month.top/api/tagapi/tag/爱学习的好孩子",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"tagapi",
+						"tag",
+						"爱学习的好孩子"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "增加TAG",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"爱学习的好孩子\",\r\n    \"describ\": \"爱学习爱得要命，没有学习就活不下去\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mao.oct-month.top/api/tagapi/add",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"tagapi",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取所有problem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mao.oct-month.top/api/problemapi/problems",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"problemapi",
+						"problems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取特定problem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mao.oct-month.top/api/problemapi/problem/1",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"problemapi",
+						"problem",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "增加problem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"问题的标题\",\r\n    \"content\": \"问题的描述\",\r\n    \"optionList\": [\r\n        1\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mao.oct-month.top/api/problemapi/add",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"problemapi",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取所有option",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mao.oct-month.top/api/optionapi/options",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"optionapi",
+						"options"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取特定option",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mao.oct-month.top/api/optionapi/option/1",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"optionapi",
+						"option",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "增加option",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"这不就是书呆子吗\",\r\n    \"taglist\": [\r\n        \"爱学习的好孩子\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mao.oct-month.top/api/optionapi/add",
+					"protocol": "http",
+					"host": [
+						"mao",
+						"oct-month",
+						"top"
+					],
+					"path": [
+						"api",
+						"optionapi",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
