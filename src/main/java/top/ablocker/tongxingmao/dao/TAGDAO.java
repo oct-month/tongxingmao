@@ -68,7 +68,7 @@ public class TAGDAO
     }
 
     // 获取一个TAG
-    public TAG getAnTAG(String name)
+    public TAG findAnTAG(String name)
     {
         String sql = "select * from `TAG` where name=?";
         try {
@@ -81,7 +81,7 @@ public class TAGDAO
     }
 
     // 获取所有TAG
-    public List<TAG> getAllTAG()
+    public List<TAG> findAllTAG()
     {
         String sql = "select * from `TAG`";
         try {

@@ -10,7 +10,7 @@ spring:
     time-zone: GMT+8
 
 server:
-  port: 8088
+  port: 8086
 
 logging:
   level:
